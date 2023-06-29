@@ -11,7 +11,7 @@ discrete infant gaze directions from videos collected in the lab, field or onlin
 customizable; users can choose between different face detectors, infant face classifiers, and gaze direction classifiers
 to create an optimized pipeline that produces the most accurate infant gaze annotations.
 
-<img src="https://github.com/icatcherplus/icatcherplus.github.io/blob/main/gaze.gif" />
+<img src="https://github.com/icatcherplus/icatcherplus.github.io/blob/main/gaze.gif?raw=true" />
 
 <!---
 ![](https://github.com/icatcherplus/icatcherplus.github.io/blob/main/gaze.gif)
