@@ -10,6 +10,19 @@ Repository found [here](https://github.com/icatcherplus/icatcher_plus).
 -->
 [![button](https://github.com/icatcherplus/icatcherplus.github.io/blob/main/images/github-mark.png?raw=true)](https://github.com/icatcherplus/icatcher_plus) [![button2](https://github.com/icatcherplus/icatcherplus.github.io/blob/main/images/quest_logo.png?raw=true)](https://quest.mit.edu/) 
 
+<div class="row">
+  <div class="column">
+    <a href="https://github.com/icatcherplus/icatcher_plus">
+      <img src="https://github.com/icatcherplus/icatcherplus.github.io/blob/main/images/github-mark.png?raw=true">
+    </a>
+  </div>
+  <div class="column">
+    <a href="https://quest.mit.edu/">
+      <img src="https://github.com/icatcherplus/icatcherplus.github.io/blob/main/images/quest_logo.png?raw=true">
+    </a>
+  </div>
+</div>
+
 # Introduction
 
 <!---feel free to change to whatever, this is all very loose... copied installation section from readme -->
