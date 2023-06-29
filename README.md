@@ -9,7 +9,10 @@ Repository found [here](https://github.com/icatcherplus/icatcher_plus).
 [iCatcher+](https://doi.org/10.1177/25152459221147250) is a tool utilized for performing automatic annotation of 
 discrete infant gaze directions from videos collected in the lab, field or online (remotely). This process is highly
 customizable; users can choose between different face detectors, infant face classifiers, and gaze direction classifiers
-to create an optimized pipeline that produces the most accurate infant gaze annotations. 
+to create an optimized pipeline that produces the most accurate infant gaze annotations.
+
+
+![](https://github.com/icatcherplus/icatcherplus.github.io/blob/main/gaze.gif)
 
 
 # Quick Installation (Windows, Linux, Mac)
