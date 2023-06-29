@@ -1,6 +1,11 @@
+
+
 <h1 align="center"> iCatcher+ Pages</h1>
 
+<a href="https://github.com/icatcherplus/icatcher_plus" class="btn">View on GitHub</a>
+<!---
 Repository found [here](https://github.com/icatcherplus/icatcher_plus).
+-->
 
 # Introduction
 
