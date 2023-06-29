@@ -2,12 +2,13 @@
 
 <h1 align="center"> iCatcher+ Pages</h1>
 
+<!---
 <a href="https://github.com/icatcherplus/icatcher_plus" class="btn btn-primary">View on GitHub</a>
+-->
 <!---
 Repository found [here](https://github.com/icatcherplus/icatcher_plus).
 -->
-[![button](https://github.com/icatcherplus/icatcherplus.github.io/blob/main/images/github-mark.png)](https://github.com/icatcherplus/icatcher_plus) [![button2](https://github.com/icatcherplus/icatcherplus.github.io/blob/main/images/quest_logo.png)](https://quest.mit.edu/) 
-
+[![button](https://github.com/icatcherplus/icatcherplus.github.io/blob/main/images/github-mark.png?raw=true)](https://github.com/icatcherplus/icatcher_plus) [![button2](https://github.com/icatcherplus/icatcherplus.github.io/blob/main/images/quest_logo.png?raw=true)](https://quest.mit.edu/) 
 
 # Introduction
 
