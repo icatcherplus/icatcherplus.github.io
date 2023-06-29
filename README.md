@@ -11,10 +11,11 @@ discrete infant gaze directions from videos collected in the lab, field or onlin
 customizable; users can choose between different face detectors, infant face classifiers, and gaze direction classifiers
 to create an optimized pipeline that produces the most accurate infant gaze annotations.
 
+<img src="https://github.com/icatcherplus/icatcherplus.github.io/blob/main/gaze.gif" />
 
+<!---
 ![](https://github.com/icatcherplus/icatcherplus.github.io/blob/main/gaze.gif)
-
-
+-->
 # Quick Installation (Windows, Linux, Mac)
 This option will let you use iCatcher+ with minimum effort, but only for predictions (inference).
 We strongly recommend using a virtual environment such as [Miniconda](https://conda.io) or [virtualenv](https://pypi.org/project/virtualenv/) before running the command below.
