@@ -11,23 +11,9 @@ Repository found [here](https://github.com/icatcherplus/icatcher_plus).
 <!---
 [![button](https://github.com/icatcherplus/icatcherplus.github.io/blob/main/images/github-mark.png?raw=true)](https://github.com/icatcherplus/icatcher_plus) [![button2](https://github.com/icatcherplus/icatcherplus.github.io/blob/main/images/quest_logo.png?raw=true)](https://quest.mit.edu/)
 -->
-
-<div class="row">
-  <div class="column">
-    <a href="https://github.com/icatcherplus/icatcher_plus">
-      <img src="https://github.com/icatcherplus/icatcherplus.github.io/blob/main/images/github-mark.png?raw=true" width="124">
-    </a>
-  </div>
-  <div class="column">
-    <a href="https://quest.mit.edu/">
-      <img src="https://github.com/icatcherplus/icatcherplus.github.io/blob/main/images/quest_logo.png?raw=true" width="350">
-    </a>
-  </div>
-</div>
-
 <p float="left">
   <a href="https://github.com/icatcherplus/icatcher_plus">
-    <img src="https://github.com/icatcherplus/icatcherplus.github.io/blob/main/images/github-mark.png?raw=true" width="124">
+    <img src="https://github.com/icatcherplus/icatcherplus.github.io/blob/main/images/github-mark.png?raw=true" width="100">
   </a>
   <a href="https://quest.mit.edu/">
     <img src="https://github.com/icatcherplus/icatcherplus.github.io/blob/main/images/quest_logo.png?raw=true" width="350">
