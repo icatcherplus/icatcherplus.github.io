@@ -13,9 +13,9 @@ Repository found [here](https://github.com/icatcherplus/icatcher_plus).
 -->
 <p float="left">
   <a href="https://github.com/icatcherplus/icatcher_plus">
-    <img src="https://github.com/icatcherplus/icatcherplus.github.io/blob/main/images/github-mark.png?raw=true" width="112">
+    <img src="https://github.com/icatcherplus/icatcherplus.github.io/blob/main/images/github-mark.png?raw=true" width="108">
   </a>
-  &nbsp; &nbsp; &nbsp; &nbsp;
+  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
   <a href="https://quest.mit.edu/">
     <img src="https://github.com/icatcherplus/icatcherplus.github.io/blob/main/images/quest_logo.png?raw=true" width="350">
   </a>
