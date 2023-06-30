@@ -38,6 +38,7 @@ If you require speedy performance, prior to installing icatcher you should insta
 
 Note2:
 When using iCatcher+ for the first time, neural network model files will automatically be downloaded to a local cache folder. To control where they are downloaded to set the "ICATCHER_DATA_DIR" environment variable.
+
 ---
 # iCatcher+ Pipeline
 The iCatcher+ pipeline can be segmented into three distinct components: face detection, face classification, and gaze
@@ -81,7 +82,7 @@ components specified above, but you must insert the flag `--gpu_id #`, with the 
 would like to use (insert 0 if your system has a single GPU).
 
 When tested on 96 videos within the [Lookit dataset](https://osf.io/ujteb/), each averaging a runtime of 9 minutes 20 seconds, Track A automatically annotated each video 
-in about **20 minutes**. The iCatcher+ default pipeline was able to correctly annotate approximately 91% of these frames
+in about **20 minutes**. The iCatcher+ default pipeline was able to correctly annotate approximately **91%** of these frames
 when compared to two human coders. 
 
 ---
