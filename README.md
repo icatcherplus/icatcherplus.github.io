@@ -1,7 +1,4 @@
 
-
-<h1 align="center"> iCatcher+ Pages</h1>
-
 <!---
 <a href="https://github.com/icatcherplus/icatcher_plus" class="btn btn-primary">View on GitHub</a>
 -->
@@ -21,7 +18,7 @@ Repository found [here](https://github.com/icatcherplus/icatcher_plus).
   </a>
 </p>
 
-# Introduction
+# About iCatcher+
 
 <!---feel free to change to whatever, this is all very loose... copied installation section from readme -->
 
@@ -35,7 +32,8 @@ to create an optimized pipeline that produces the most accurate infant gaze anno
 <!---
 ![](https://github.com/icatcherplus/icatcherplus.github.io/blob/main/gaze.gif)
 -->
-# Quick Installation (Windows, Linux, Mac)
+
+## Quick Installation (Windows, Linux, Mac)
 This option will let you use iCatcher+ with minimum effort, but only for predictions (inference).
 We strongly recommend using a virtual environment such as [Miniconda](https://conda.io) or [virtualenv](https://pypi.org/project/virtualenv/) before running the command below.
 
@@ -48,6 +46,27 @@ If you require speedy performance, prior to installing icatcher you should insta
 
 Note2:
 When using iCatcher+ for the first time, neural network model files will automatically be downloaded to a local cache folder. To control where they are downloaded to set the "ICATCHER_DATA_DIR" environment variable.
+
+# iCatcher+ Pipeline
+The iCatcher+ pipeline can be segmented into three distinct components: face detection, face classification, and gaze
+classification. Several tests have been run on each of these components to optimize overall performance on annotation
+accuracy. Each of these components has plug-and-play options to allow for higher accuracy and quicker results in varying
+circumstances. Below, the default iCatcher+ pipeline is defined:
+
+## Face Detection
+iCatcher+ utilizes an out-of-box face detector based on [RetinaFace](https://arxiv.org/abs/1905.00641), a robust state 
+of the art pretrained model with a resnet50 backbone. A variation of RetinaFace that allows for batch inference is
+used in order to decrease compute time, and can be found [here](https://github.com/elliottzheng/batch-face).
+
+## Face Classification
+Although a face classifier has been trained to distinguish between infant faces and adult faces within input videos
+(and is readily available for use with the flag --use_fc_model), the best approach tends to be with the default "lowest 
+face" selector. Since studies typically require infants' faces to be below parents, this method selects the face based
+on a mix of its bounding box's y-coordinate and the height:width ratio being close to 1 (parents are normally instructed to look away 
+from the camera during studies, so their relative bounding boxes tend to be more rectangular).
+
+## Gaze Classification
+KHALED INSERT DETAILS HERE
 
 # Usability
 In order to increase the accuracy of the iCatcher+ gaze coding system, several design decisions were made that, while 
