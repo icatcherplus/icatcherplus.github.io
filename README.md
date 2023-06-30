@@ -13,7 +13,7 @@ Repository found [here](https://github.com/icatcherplus/icatcher_plus).
 -->
 <p float="left">
   <a href="https://github.com/icatcherplus/icatcher_plus">
-    <img src="https://github.com/icatcherplus/icatcherplus.github.io/blob/main/images/github-mark.png?raw=true" width="116">
+    <img src="https://github.com/icatcherplus/icatcherplus.github.io/blob/main/images/github-mark.png?raw=true" width="110">
   </a>
   &nbsp; &nbsp; &nbsp; &nbsp;
   <a href="https://quest.mit.edu/">
