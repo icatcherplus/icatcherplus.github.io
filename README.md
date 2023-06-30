@@ -15,7 +15,7 @@ Repository found [here](https://github.com/icatcherplus/icatcher_plus).
 <div class="row">
   <div class="column">
     <a href="https://github.com/icatcherplus/icatcher_plus">
-      <img src="https://github.com/icatcherplus/icatcherplus.github.io/blob/main/images/github-mark.png?raw=true" width="150">
+      <img src="https://github.com/icatcherplus/icatcherplus.github.io/blob/main/images/github-mark.png?raw=true" width="124">
     </a>
   </div>
   <div class="column">
@@ -24,6 +24,15 @@ Repository found [here](https://github.com/icatcherplus/icatcher_plus).
     </a>
   </div>
 </div>
+
+<p float="left">
+  <a href="https://github.com/icatcherplus/icatcher_plus">
+    <img src="https://github.com/icatcherplus/icatcherplus.github.io/blob/main/images/github-mark.png?raw=true" width="124">
+  </a>
+  <a href="https://quest.mit.edu/">
+    <img src="https://github.com/icatcherplus/icatcherplus.github.io/blob/main/images/quest_logo.png?raw=true" width="350">
+  </a>
+</p>
 
 # Introduction
 
