@@ -11,13 +11,13 @@ Repository found [here](https://github.com/icatcherplus/icatcher_plus).
 <!---
 [![button](https://github.com/icatcherplus/icatcherplus.github.io/blob/main/images/github-mark.png?raw=true)](https://github.com/icatcherplus/icatcher_plus) [![button2](https://github.com/icatcherplus/icatcherplus.github.io/blob/main/images/quest_logo.png?raw=true)](https://quest.mit.edu/)
 -->
-<p float="left">
+<p align="center">
   <a href="https://github.com/icatcherplus/icatcher_plus">
-    <img src="https://github.com/icatcherplus/icatcherplus.github.io/blob/main/images/github-mark.png?raw=true" width="108">
+    <img src="https://github.com/icatcherplus/icatcherplus.github.io/blob/main/images/github-mark.png?raw=true" height="120">
   </a>
-  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
   <a href="https://quest.mit.edu/">
-    <img src="https://github.com/icatcherplus/icatcherplus.github.io/blob/main/images/quest_logo.png?raw=true" width="350">
+    <img src="https://github.com/icatcherplus/icatcherplus.github.io/blob/main/images/quest_logo_cropped.png?raw=true" height="120">
   </a>
 </p>
 
