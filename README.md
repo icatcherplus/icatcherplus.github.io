@@ -95,29 +95,27 @@ keep Track B as a viable option.
 
 ### Gaze Classifier
 The default gaze classifier model is **RegNet**. This model is computationally more intensive than the original **ResNet** based gaze classifier, yielding longer run times.
-For this reason, the original gaze calssifier is also available.
+For this reason, the original gaze calssifier is also available (see `--model` flag below).
 
 ### Face Detector
 The default face detection model used in the iCatcher+ pipeline is **RetinaFace**. This model is computationally
 intensive and results in long run times when used in the CPU track. For this reason, the original face detection model 
-(**OpenCV DNN**) is also available. This model is less robust, but allows for quicker run times if that's your priority.
+(**OpenCV DNN**) is also available. This model is less robust, but allows for quicker run times if that's your priority (see `--fd_model` flag below).
 
 If you elect to prioritize accuracy and stick with the default RetinaFace face detector, there are certain routes you
 can take to decrease the associated long run time.
 
 #### Parallel Processing
-Parallel processing is used by default when RetinaFace is run on CPU. This will split the frames into batches that will
-be processed on each core of your system. After testing, a batch size of 16 frames was chosen as the default setting. 
-This can be customized using the `--fd_batch_size` flag. If you don't want all of your cores to be utilized in the 
-parallelization process (for instance if you have other things to run or work on), you can specify an amount of CPUs 
-to pull out of the pipeline through the `--num_cpus_saved` flag. One caveat of parallel processing input frames is that
-the full video is buffered in order to divide it into batches and send out to each core. This process can be switched
-off by changing the `--dont_buffer` flag, which may help with memory issues of loading the full video, but will increase
-overall run time.
+Parallel processing can be used when RetinaFace is run on CPU. This option enables faster overall processing time, but requires significantly more memory (RAM).
+You can turn it on by specifying the `--fd_parallel_processing` flag.
+This will split the frames into batches that will be processed on each core of your system. A batch size of 16 (frames) was chosen as the default setting. 
+This can be customized using the `--fd_batch_size` flag. By default, all CPU cores will be used. You can specify an amount of CPUs 
+to use manually with the `--fd_num_cpus` flag. One caveat of parallel processing is that
+the full video needs to be buffered in order to divide it into batches and send out to each core.
 
 ### Skipping Frames
 When using RetinaFace, you can choose to alter the amount of frames you are running through the face detector by 
-selecting an amount of frames to 'skip'. For the amount of frames you specify, the last known bounding box coordinates 
+selecting an amount of frames to 'skip' (`--fd_skip_frames`). For the amount of frames you specify, the last known bounding box coordinates 
 of an infant's face will be reused and fed back into the gaze classifier. Since videos are typically 30 FPS, infant 
 faces tend to stay relatively stationary between frames. Skipping frames will decrease the run time of the
 pipeline, but may variably decrease the accuracy.
@@ -129,7 +127,7 @@ In order to see all of the available options iCatcher+ offers, you can run:
 `icatcher --help`
 
 Although this command will list all of the possible flags, there are certain flags that are important to know when 
-working in Track A (GPU) vs. Track B (CPU).
+working in Track A (GPU) vs. Track B (CPU), and Track Bpp (CPU, parallel processing on).
 
 | **Flags**                 | **Track(s)** | **Choices**                                            | **Default**                                | **Description**                                                                                                                                                    |
 |---------------------------|--------------|--------------------------------------------------------|--------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -137,10 +135,10 @@ working in Track A (GPU) vs. Track B (CPU).
 | --model                   | A, B         | icatcher+_lookit_regnet.pth, icatcher+_lookit.pth, icatcher+_bw-cali.pth, icatcher+_senegal.pth                                 | icatcher+_lookit_regnet.pth                                 | The gaze classifier model used within the iCatcher+ pipeline. icatcher+_lookit.pth may be more suitable for cpu usage if speed is a greater priority than accuracy. For complete description of other models see original paper.            |
 | --fd_model                | A, B         | retinaface, opencv_dnn                                 | retinaface                                 | The face detector model used within the iCatcher+ pipeline. opencv_dnn may be more suitable for cpu usage if speed is a greater priority than accuracy.            |
 | --fd_confidence_threshold | A, B         | float                                                  | 0.9 (if retinaface) or 0.7 (if opencv_dnn) | The score confidence threshold that needs to be met for a bounding box to be accepted as a face. A higher score represents more stringent face requirements.       |
-| --fd_batch_size           | A, B         | int                                                    | 16                                         | Corresponds to the number of frames fed into the RetinaFace face detector at one time for batch inference.                                                         |
-| --num_cpus_saved          | B            | int                                                    | 0                                          | Specifies the number of CPUs you’d like to keep from being used in the RetinaFace face detection parallel processing.                                              |
-| --fd_skip_frames          | B            | int                                                    | 0                                          | The number of frames to skip between each face detection. If frames are skipped, the last known bounding box is reused for the skipped frames.                     |
-| --dont_buffer             | B            | True, False                                            | False                                      | When changed, frames will not be buffered, decreasing memory usage, but increasing processing time. Turning off the buffer also allows for live stream of results. |
+| --fd_parallel_processing             | B            | True, False                                            | False                                      | Frames will be proccessed in parallel by batching the frames (requires buffering them), increasing memory usage, but decreasing overall processing time. Disallows live stream of results. |
+| --fd_batch_size           | Bpp         | int                                                    | 16                                         | Corresponds to the number of frames fed into the RetinaFace face detector for batch inference.                                                         |
+| --fd_num_cpus          | Bpp            | int                                                    | -1                                          | Specifies the number of CPU cores that will be used in the RetinaFace face detection parallel processing (-1: use all available cpu cores).                                              |
+| --fd_skip_frames          | Bpp            | int                                                    | 0                                          | The number of frames to skip between each face detection. If frames are skipped, the last known bounding box is reused for the skipped frames.                     |
 
 ---
 
